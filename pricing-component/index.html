@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <meta
+      name="description"
+      content="Compare our Basic, Professional, and Master pricing plans. Switch between monthly and annual billing."
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor |Pricing Component</title>
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1 class="header__title">Our Pricing</h1>
+        <div class="header__toggle">
+          <p class="toggle__text">Annually</p>
+          <label class="toggle__switch" for="toggle" role="switch" aria-checked="false">
+            <input
+              type="checkbox"
+              class="switch__input"
+              aria-label="Toggle billing mode"
+              id="toggle"
+            />
+            <span class="switch__slider"></span>
+          </label>
+          <p class="toggle__text">Monthly</p>
+        </div>
+      </header>
+
+      <section aria-label="Pricing plans" class="grid">
+        <!-- Basic -->
+
+        <article class="grid__item" aria-labelledby="basic-title">
+          <header class="item__header">
+            <h2 class="header__title" id="basic-title">Basic</h2>
+            <div class="header__prices">
+              <p class="prices__price prices__price--monthly">
+                <span class="price--dollar-sign">&dollar;</span>
+                <span class="price--amount">19.99</span>
+              </p>
+              <p class="prices__price prices__price--annually">
+                <span class="price--dollar-sign">&dollar;</span>
+                <span class="price--amount">199.99</span>
+              </p>
+            </div>
+          </header>
+          <div class="item__content">
+            <p class="content__description">500 GB Storage</p>
+            <p class="content__description">2 Users Allowed</p>
+            <p class="content__description">Send up to 3 GB</p>
+          </div>
+          <footer class="item__footer">
+            <button type="button" class="footer__button">Learn More</button>
+          </footer>
+        </article>
+
+        <!-- Professional -->
+        <article
+          class="grid__item grid__item--professional"
+          aria-labelledby="pro-title"
+        >
+          <header class="item__header">
+            <h2 class="header__title" id="pro-title">Professional</h2>
+            <div class="header__prices">
+              <p class="prices__price prices__price--monthly">
+                <span class="price--dollar-sign">&dollar;</span>
+                <span class="price--amount">24.99</span>
+              </p>
+              <p class="prices__price prices__price--annually">
+                <span class="price--dollar-sign">&dollar;</span>
+                <span class="price--amount">249.99</span>
+              </p>
+            </div>
+          </header>
+          <div class="item__content">
+            <p class="content__description">1 TB Storage</p>
+            <p class="content__description">5 Users Allowed</p>
+            <p class="content__description">Send up to 10 GB</p>
+          </div>
+          <footer class="item__footer">
+            <button type="button" class="footer__button --highlight">
+              Learn More
+            </button>
+          </footer>
+        </article>
+
+        <!-- Master-->
+        <article class="grid__item" aria-labelledby="master-title">
+          <header class="item__header">
+            <h2 class="header__title" id="master-title">Master</h2>
+            <div class="header__prices">
+              <p class="prices__price prices__price--monthly">
+                <span class="price--dollar-sign">&dollar;</span>
+                <span class="price--amount">39.99</span>
+              </p>
+              <p class="prices__price prices__price--annually">
+                <span class="price--dollar-sign">&dollar;</span>
+                <span class="price--amount">399.99</span>
+              </p>
+            </div>
+          </header>
+          <div class="item__content">
+            <p class="content__description">2 TB Storage</p>
+            <p class="content__description">10 Users Allowed</p>
+            <p class="content__description">Send up to 20 GB</p>
+          </div>
+          <footer class="item__footer">
+            <button type="button" class="footer__button">Learn More</button>
+          </footer>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
