@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Frontend Mentor | Chat App</title>
+  </head>
+  <body>
+    <main class="app">
+      <section class="app__phone">
+        <header class="phone__header">
+          <div class="icon-arrow-left"></div>
+          <div class="header__user">
+            <div class="user__avatar">
+              <img
+                src="./assets/images/avatar.jpg"
+                alt="Samuel Green picture"
+              />
+            </div>
+            <div class="user__name">
+              <h2>Samuel Green</h2>
+              <p>Available to Walk</p>
+            </div>
+          </div>
+          <div class="icon-options">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </header>
+        <div class="phone__chat">
+          <p class="message__text message--left">
+            That sounds great. I’d be happy with that.
+          </p>
+          <p class="message__text message--left">
+            Could you send over some pictures of your dog, please?
+          </p>
+
+          <div class="message_right-container">
+            <div class="message__picture">
+              <img
+                src="./assets/images/dog-image-1.jpg"
+                alt="happy pretty dog"
+              />
+              <img
+                src="./assets/images/dog-image-2.jpg"
+                alt="Dog lying on the sand"
+              />
+              <img
+                src="./assets/images/dog-image-3.jpg"
+                alt="dog walking with a branch in its mouth"
+              />
+            </div>
+            <p class="message__text message--right">
+              Here are a few pictures. She’s a happy girl!
+            </p>
+            <p class="message__text message--right">Can you make it?</p>
+          </div>
+          <p class="message__text message--left">
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
+
+          <ul class="message__planner">
+            <li class="message__text message--left">
+              <div>
+                <span class="text__checkbox" role="checkbox"></span>
+                <span class="text__time"> 30 minute walk</span>
+              </div>
+              <span class="text__price"> $29 </span>
+            </li>
+            <li class="message__text message--left">
+              <div>
+                <span class="text__checkbox" role="checkbox"></span>
+                <span class="text__time"> 1 hour walk</span>
+              </div>
+              <span class="text__price"> $49 </span>
+            </li>
+          </ul>
+        </div>
+        <footer class="phone__type-message">
+          <div class="type-message__input">
+            <label for="chat-input" class="sr-only" hidden
+              >Type your message</label
+            >
+            <input type="text" placeholder="Type a message…" id="chat-input" />
+            <div class="icon-send"></div>
+          </div>
+        </footer>
+      </section>
+      <section class="app__dog-walker">
+        <h2 class="dog-walker__title">Simple booking</h2>
+        <p class="dog-walker__text">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
