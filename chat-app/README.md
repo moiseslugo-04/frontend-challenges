@@ -20,8 +20,7 @@ The project showcases a visually appealing mock chat between a user and a dog wa
 - No JavaScript - purely static and style-driven
 
 ## Preview
-
-![Preview of Chat App UI ](URL:https://sweet-florentine-f4481d.netlify.app/)
+![Preview of Chat App UI ](URL: https://sweet-florentine-f4481d.netlify.app/)
 
 ## 📸 Screenshots
 
