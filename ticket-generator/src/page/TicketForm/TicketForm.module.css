@@ -1,0 +1,43 @@
+.ticketForm {
+  max-width: 900px;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--neutral);
+  padding: 20px;
+}
+
+.ticketFormHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.ticketFormHeader p {
+  color: var(--neutral-300);
+}
+
+.ticketFormForm {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  color: var(--neutral);
+  margin: auto 0;
+}
+
+button {
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--orange-500);
+  color: var(--neutral-900);
+  border: none;
+  font-size: inherit;
+  font-weight: 700;
+}

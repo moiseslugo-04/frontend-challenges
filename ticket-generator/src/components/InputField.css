@@ -1,0 +1,26 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.input-field__text-label {
+  color: var(--neutral);
+}
+.input-field__input {
+  background-color: transparent;
+  border: 1px solid var(--neutral-700);
+  padding: 16px 8px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--neutral-550);
+  color: var(--neutral-300);
+  font-size: 1rem;
+}
+.input-field__input::placeholder {
+  color: var(--neutral-500);
+}
+.input-field__input:user-invalid {
+  border-color: var(--orange-500);
+}

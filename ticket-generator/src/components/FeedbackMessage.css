@@ -1,0 +1,19 @@
+.feedbackMessage {
+  font-size: clamp(0.7rem, 0.8rem, 1rem);
+  display: flex;
+  gap: 7px;
+  text-align: start;
+  justify-content: start;
+  align-items: center;
+}
+
+.errorMessage {
+  color: var(--orange-500);
+}
+.feedbackMessage.errorMessage svg > path {
+  stroke: #e16151;
+}
+
+.infoMessage {
+  color: var(--neutral-300);
+}

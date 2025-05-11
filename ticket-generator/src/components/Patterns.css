@@ -1,0 +1,83 @@
+.pattern-top-lines {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  background-image: url('../assets/images/pattern-lines.svg');
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.pattern-top-left {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background-image: url('../assets/images/pattern-circle.svg');
+  top: -3%;
+  left: -3%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.pattern-top-right {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  background-image: url('../assets/images/pattern-squiggly-line-top.svg');
+  top: 3%;
+  right: 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.pattern-center-right {
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background-image: url('../assets/images/pattern-circle.svg');
+  top: 40%;
+  right: -7%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.pattern-bottom-left {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-image: url('../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg');
+  bottom: -6rem;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  z-index: -1;
+}
+
+@media (min-width: 1024px) {
+  .pattern-bottom-left {
+    background-image: url('../assets/images/pattern-squiggly-line-bottom-desktop.svg');
+  }
+  .pattern-bottom-left {
+    width: 80%;
+    height: 70%;
+    left: -8rem;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    background-image: url('../src/assets/images/background-tablet.png');
+  }
+  #root {
+    justify-content: center;
+  }
+  .pattern-bottom-left {
+    width: 60%;
+    height: 60%;
+    bottom: -3rem;
+    left: 0rem;
+  }
+}
