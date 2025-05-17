@@ -1,0 +1,29 @@
+.avatarPreview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.avatarPreview img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--neutral-300);
+  border-radius: 12px;
+  object-fit: cover;
+}
+.avatarPreview__options {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.avatarPreview__options button {
+  background-color: var(--neutral-700);
+  color: var(--neutral-300);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.avatarPreview__options button:first-child {
+  text-decoration: underline;
+}

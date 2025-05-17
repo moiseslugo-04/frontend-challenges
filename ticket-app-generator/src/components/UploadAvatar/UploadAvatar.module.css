@@ -1,0 +1,39 @@
+.uploadAvatar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dragZone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px dashed var(--neutral);
+  background-color: var(--neutral-800);
+  border-radius: 12px;
+  min-height: 180px;
+  outline-offset: 3px;
+}
+.dragZone.isDrag {
+  border-color: var(--neutral-500);
+}
+.dragZone:focus-visible,
+.dragZone:focus {
+  outline: 2px solid var(--neutral-500);
+}
+.dragZone__upload svg {
+  width: 40px;
+  height: auto;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: var(--neutral-700);
+}
+.dragZone__upload span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--neutral-500);
+  font-weight: 400;
+  font-family: inherit;
+  margin-top: 10px;
+}

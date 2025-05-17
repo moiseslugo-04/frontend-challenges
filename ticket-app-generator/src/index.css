@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('./assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf'),
+    format('truetype');
+  font-weight: 400 800;
+  font-style: normal;
+}
+:root {
+  --neutral: hsl(0, 0%, 100%);
+  --neutral-300: hsl(252, 6%, 83%);
+  --neutral-500: hsl(245, 15%, 58%);
+  --neutral-700: hsl(245, 19%, 35%);
+  --neutral-800: hsla(243, 47%, 17%, 0.801);
+  --neutral-900: hsl(248, 70%, 10%);
+
+  --orange-500: hsl(7, 88%, 67%);
+  --orange-700: hsl(7, 71%, 60%);
+
+  --gradient-text: linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  font-size: 20px;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background-image: url('/images/backgrounds/mobile.png');
+  font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
+  color: var(--neutral);
+  font-size: 20px;
+}
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--orange-500);
+  color: var(--neutral-900);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-image: url('/images/backgrounds/tablet.png');
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url('/images/backgrounds/desktop.png');
+  }
+}

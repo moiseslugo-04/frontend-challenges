@@ -1,0 +1,32 @@
+.ticketGenerator {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.ticketGenerator__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: inherit;
+}
+.ticketGenerator__header > p {
+  color: var(--neutral-300);
+}
+.ticketGenerator__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ticketGenerator__form button::focus-visible,
+.ticketGenerator__form button::focus {
+  outline: 1px solid var(--neutral-500);
+}
+.ticketGenerator__form button:disabled {
+  opacity: 0.7;
+  background-color: silver;
+}

@@ -1,0 +1,27 @@
+.fieldInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+.fieldInput > input {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--neutral-800);
+  border: 1px solid var(--neutral-500);
+  border-radius: 8px;
+  outline-offset: 3px;
+  color: var(--neutral);
+}
+.fieldInput > input:focus,
+.fieldInput > input:focus-visible {
+  outline: 1px solid var(--neutral-500);
+}
+.fieldInput > input::placeholder {
+  color: var(--neutral-300);
+}
+.fieldInput b {
+  font-size: 0.7rem;
+  color: var(--neutral-500);
+}

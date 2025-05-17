@@ -1,0 +1,14 @@
+.contentMessage {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  text-align: start;
+}
+.message {
+  font-size: clamp(0.6rem, 0.8rem, 1rem);
+  color: var(--neutral-500);
+}
+.message.error {
+  color: var(--orange-700);
+}
