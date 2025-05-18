@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useCallback } from 'react'
 import { AvatarPreview } from '../AvatarPreview/AvatarPreview'
 import { UploadIcon } from '../Icons'
 import styles from './UploadAvatar.module.css'
@@ -7,6 +7,14 @@ import { useDragAndDrop } from '../../hooks/useDragAndDrop'
 export function UploadAvatar({ onChange, onRemove, avatar }) {
   const { url } = useTempUrl({ file: avatar })
   const { files, isDragging, eventHandlers } = useDragAndDrop(handleDrop)
+
+  const handleDrop = useCallback(
+    ([file]) => {
+      if (!file) return
+      onChange({ target: { name: 'avatar', files: [file] } })
+    },
+    [onChange]
+  )
   const inputRef = useRef()
   const resetInputFile = () => {
     if (inputRef.current) inputRef.current.value = null
@@ -25,10 +33,7 @@ export function UploadAvatar({ onChange, onRemove, avatar }) {
   }
   const handleUpdate = () => openFilePicker()
   const onKeyDown = (event) => (event.key == 'Enter' ? handleClick() : '')
-  function handleDrop([file]) {
-    if (!file) return
-    onChange({ target: { name: 'avatar', files: [file] } })
-  }
+
   return (
     <div className={styles.uploadAvatar}>
       <label htmlFor='avatar'>Upload Avatar</label>

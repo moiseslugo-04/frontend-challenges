@@ -8,15 +8,12 @@ export function useDragAndDrop(onDropCallback) {
   }, [])
   const handleDragLeave = useCallback(() => setIsDragging(false), [])
 
-  const handleDrop = useCallback(
-    (event) => {
-      event.preventDefault()
-      setIsDragging(false)
-      const files = Array.from(event.dataTransfer.files)
-      onDropCallback(files)
-    },
-    [onDropCallback]
-  )
+  const handleDrop = useCallback((event) => {
+    event.preventDefault()
+    setIsDragging(false)
+    const files = Array.from(event.dataTransfer.files) // return an Array files
+    onDropCallback(files)
+  }, [])
 
   return {
     isDragging,
