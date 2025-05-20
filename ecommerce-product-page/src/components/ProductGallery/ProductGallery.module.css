@@ -1,0 +1,8 @@
+.productGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+  gap: 16px;
+}

@@ -1,0 +1,50 @@
+.lightbox__container {
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
+  background-color: var(--bg-lightbox);
+}
+.lightbox {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+  padding: 20px;
+}
+.lightbox__close {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+.lightbox button {
+  display: block !important;
+}
+.lightbox button[data-testid='next'] {
+  right: -20px;
+}
+.lightbox button[data-testid='previous'] {
+  left: -20px;
+}
+.lightbox img[data-testid='product-image'] {
+  min-height: 400px;
+  max-width: 500px !important;
+}
+.lightbox__close path {
+  fill: var(--orange);
+  position: relative;
+}
+.lightbox img {
+  border-radius: 12px;
+}
+
+@media (min-width: 600px) {
+  .lightbox img[data-testid='product-image'] {
+    min-height: 600px;
+  }
+}
