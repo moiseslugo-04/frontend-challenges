@@ -22,11 +22,11 @@ A responsive e-commerce product page built with React and TypeScript. This proje
 
 ### 💻 Desktop
 
-![Desktop Screenshot](/design/desktop-design.jpg)
+![Desktop Screenshot](./design/desktop-design.jpg)
 
 ### 📱 Mobile
 
-![Mobile Screenshot](/design/mobile-design.jpg)
+![Mobile Screenshot](./design/mobile-design.jpg)
 
 ---
 
@@ -57,7 +57,7 @@ A responsive e-commerce product page built with React and TypeScript. This proje
 ## 📦 Installation
 
 ```bash
-git
+git https://github.com/moiseslugo-04/frontend-challenges/tree/main/ecommerce-product-page
 cd e-commerce-product-page
 pnpm install
 pnpm dev
